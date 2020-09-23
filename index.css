@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+header .desktop {
+  display: none;
+}
+header .logo img {
+  width: 4rem;
+  margin: 1rem;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 60px;
+  height: 60px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-btn__burguer {
+  width: 40px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burguer::before,
+.menu-btn__burguer::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burguer::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn__burguer::after {
+  transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn__burguer {
+  transform: translateX(-50px);
+  background-color: transparent;
+}
+
+.menu-btn.open .menu-btn__burguer::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burguer::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu-mobile {
+  margin-top: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  z-index: 1;
+  left: 800px;
+}
+.open {
+  left: 0;
+}
+.menu-mobile ul {
+  list-style: none;
+}
+.menu-mobile li {
+  margin: 1rem;
+  padding: 1rem;
+}
+.menu-mobile li a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  margin-top: 2rem;
+  text-align: center;
+}
+main h1 {
+  margin-top: 4rem;
+  line-height: 2;
+}
+.resaltar {
+  color: rgba(108, 99, 255, 1);
+}
+main img {
+  margin: 3rem 2rem;
+  width: 80%;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.card {
+  width: 90%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.card img {
+  width: 40%;
+}
+.card h2 {
+  font-size: 1.2rem;
+}
+.border-left {
+  border-left: 3px solid rgb(93, 224, 205);
+  border-bottom: 3px solid rgb(93, 224, 205);
+}
+.border-right {
+  border-right: 3px solid rgba(108, 99, 255, 1);
+  border-top: 3px solid rgba(108, 99, 255, 1);
+}
+.social-media {
+  margin-top: 2rem;
+  background-color: rgba(93, 224, 205, 0.5);
+  display: flex;
+  justify-content: center;
+}
+.social-media a {
+  background-color: rgba(93, 224, 205, 0.2);
+}
+.social-media i {
+  background-color: rgba(93, 224, 205, 0.2);
+  color: rgba(108, 99, 255, 1);
+  font-size: 2rem;
+  margin: 1rem;
+}
+.social-media i:hover {
+  font-size: 2.5rem;
+}
+.copy {
+  display: block;
+  font-size: 0.5rem;
+}
+@media (min-width: 600px) {
+  .menu-btn {
+    display: none;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  header {
+    align-items: center;
+    padding: 1rem;
+  }
+  .logo {
+    margin-top: 1.5rem;
+  }
+  header .desktop {
+    display: flex;
+  }
+
+  header .desktop ul {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+  }
+  header .desktop ul li {
+    margin: 1rem;
+    cursor: pointer;
+  }
+  header .desktop ul li:hover {
+    border-bottom: 3px solid rgba(108, 99, 255, 1);
+  }
+  header .desktop ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  main {
+    padding-top: 2rem;
+  }
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+  main img {
+    width: 40%;
+  }
+  .card {
+    width: 70%;
+  }
+  .card img {
+    width: 30%;
+  }
+}

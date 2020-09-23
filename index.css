@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -194,8 +195,10 @@ main img {
   header .desktop ul li {
     margin: 1rem;
     cursor: pointer;
+    padding-bottom: 0.5rem;
   }
   header .desktop ul li:hover {
+
     border-bottom: 3px solid rgba(108, 99, 255, 1);
   }
   header .desktop ul li a {

@@ -19,15 +19,15 @@ menuBtn.addEventListener("click", () => {
 window.sr = ScrollReveal();
 
 sr.reveal('.border-left', {
-    duration: 4000,
+    duration: 3000,
     origin: 'left',
-    distance: '-400px'
+    distance: '-300px'
 });
 
 sr.reveal('.border-right', {
-    duration: 4000,
+    duration: 3000,
     origin: 'right',
-    distance: '-400px'
+    distance: '-300px'
 });
 
 

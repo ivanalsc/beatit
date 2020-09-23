@@ -19,13 +19,13 @@ menuBtn.addEventListener("click", () => {
 window.sr = ScrollReveal();
 
 sr.reveal('.border-left', {
-    duration: 3000,
+    duration: 1000,
     origin: 'left',
     distance: '-300px'
 });
 
 sr.reveal('.border-right', {
-    duration: 3000,
+    duration: 1000,
     origin: 'right',
     distance: '-300px'
 });
